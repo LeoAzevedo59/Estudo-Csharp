@@ -2,9 +2,9 @@
 
 namespace Estudo_Csharp
 {
-    class HelloWorld
+    class _00HelloWorld
     {
-        static void Main(string[] args)
+        static void x(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
