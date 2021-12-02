@@ -7,7 +7,7 @@ namespace Estudo_Csharp
 {
     class _04EntradaDeDados02
     {
-        public static void Main(String [] arg)
+        public static void X(String [] arg)
         {
             int idade;
             char sexo;
