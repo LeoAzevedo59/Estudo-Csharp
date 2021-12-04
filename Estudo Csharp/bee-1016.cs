@@ -6,7 +6,7 @@ namespace Estudo_Csharp
 {
     class bee_1016
     {
-        public static void Main(String[] args)
+        public static void X(String[] args)
         {
             int difKM, difMin, KM, dif;
 
