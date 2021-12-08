@@ -7,7 +7,7 @@ namespace Estudo_Csharp
 {
     class bee_1048
     {
-        public static void Main(String[] args)
+        public static void x(String[] args)
         {
             static void Main(string[] args)
             {
