@@ -6,7 +6,7 @@ namespace Estudo_Csharp
 {
     class bee_1131
     {
-        public static void Main(String[] args)
+        public static void X(String[] args)
         {
             int Inter, Gremio, Grenais, GolInter, GolGremio, Empate, Total;
 
