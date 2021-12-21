@@ -6,7 +6,7 @@ namespace Estudo_Csharp
 {
     class _16Vetor02
     {
-        static void Main(String[] args)
+        static void X(String[] args)
         {
             int X;
             int[] A;
