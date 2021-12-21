@@ -6,7 +6,7 @@ namespace Estudo_Csharp
 {
     class bee_1151
     {
-        static void Main(String[] args)
+        static void X(String[] args)
         {
             int Sequencia, X, Y, B;
             Sequencia = int.Parse(Console.ReadLine());
