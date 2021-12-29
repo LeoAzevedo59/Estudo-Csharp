@@ -7,7 +7,7 @@ namespace Estudo_Csharp
 {
     class _18Vetor04
     {
-        static void Main(String[] args)
+        static void X(String[] args)
         {
             int X, Idade, TotalIdade;
             double Altura, AlturaTotal, AlturaMedia, PorcIdade;
