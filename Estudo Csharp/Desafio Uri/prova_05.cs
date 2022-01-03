@@ -6,7 +6,7 @@ namespace Estudo_Csharp
 {
     class prova_05
     {
-        static void Main(String[] args)
+        static void X(String[] args)
         {
             int N, X, Dentro, Fora;
 
