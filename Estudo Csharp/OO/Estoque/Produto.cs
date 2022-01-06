@@ -5,55 +5,44 @@ namespace Estudo_Csharp.OO.Estoque
 {
     class Produto
     {
-        private string _nome;
-        private double _preco;
-        private int _quantidade;
+        public string Nome { get; set; }
+        public double Preco { get; private set; }
+        public int Quantidade { get; private set; }
 
         private Produto(int quantidade)
         {
-            _quantidade = quantidade;
+            Quantidade = quantidade;
         }
 
         public Produto(string nome, double preco, int quantidade) : this(quantidade)
         {
-            _nome = nome;
-            _preco = preco;
-        }
-
-        public string GetNome()
-        {
-            return _nome;
-        }
-
-        public void SetNome(string nome)
-        {
-            if (nome != null && nome.Length > 1) 
-            _nome = nome;
+            Nome = nome;
+            Preco = preco;
         }
 
         public double ValorTotalEmEstoque()
         {
-            return _quantidade * _preco;
+            return Quantidade * Preco;
         }
 
         public void AdicionarProdutos(int quantidade)
         {
-            _quantidade += quantidade;
+            Quantidade += quantidade;
         }
 
         public void RemoverProdutos(int quantidade)
         {
-            _quantidade -= quantidade;
+            Quantidade -= quantidade;
         }
 
         public override string ToString()
         {
             return "Dados do produto: "
-                + _nome
+                + Nome
                 + ", $ "
-                + _preco.ToString("F2", CultureInfo.InvariantCulture)
+                + Preco.ToString("F2", CultureInfo.InvariantCulture)
                 + ", "
-                + _quantidade
+                + Quantidade
                 + " unidades, Total: "
                 + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
         }
