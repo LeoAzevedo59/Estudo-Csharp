@@ -7,7 +7,7 @@ namespace Estudo_Csharp.OO.Funcionario
 {
     class AppFuncionario
     {
-        static void Main(String[] args)
+        static void X(String[] args)
         {
             Funcionario funcionario = new Funcionario();
 

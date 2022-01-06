@@ -8,44 +8,52 @@ namespace Estudo_Csharp.OO
 {
     class ControleDeEstoque
     {
-        static void X(String[] args)
+        static void Main(String[] args)
         {
-            Produto produto = new Produto();
+            //double Total;
+            //int qte;
 
-            double Total;
-            int qte;
+            //Console.WriteLine("Entre os dados do produto:");
+            //Console.Write("Nome:");
+            //string nome= Console.ReadLine();
+            //Console.Write("Preço:");
+            //double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.Write("Quantidade no estoque:");
+            //int quantidade = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Entre os dados do produto:");
-            Console.Write("Nome:");
-            produto.Nome = Console.ReadLine();
-            Console.Write("Preço:");
-            produto.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.Write("Quantidade no estoque:");
-            produto.Quantidade = int.Parse(Console.ReadLine());
+            //Produto produto = new Produto(nome, preco, quantidade);
 
-            Total = produto.ValorTotalEmEstoque();
+            //Total = produto.ValorTotalEmEstoque();
 
-            Console.WriteLine(produto);
+            //Console.WriteLine(produto);
 
-            Console.WriteLine("Digite um número de produtos a ser adicionado ao estoque:");
+            //Console.WriteLine("Digite um número de produtos a ser adicionado ao estoque:");
 
-            qte = int.Parse(Console.ReadLine());
+            //qte = int.Parse(Console.ReadLine());
 
-            produto.AdicionarProdutos(qte);
+            //produto.AdicionarProdutos(qte);
 
-            Total = produto.ValorTotalEmEstoque();
+            //Total = produto.ValorTotalEmEstoque();
 
-            Console.WriteLine(produto);
+            //Console.WriteLine(produto);
 
-            Console.WriteLine("Digite um número de produtos a ser removido ao estoque:");
+            //Console.WriteLine("Digite um número de produtos a ser removido ao estoque:");
 
-            qte = int.Parse(Console.ReadLine());
+            //qte = int.Parse(Console.ReadLine());
 
-            produto.RemoverProdutos(qte);
+            //produto.RemoverProdutos(qte);
 
-            Total = produto.ValorTotalEmEstoque();
+            //Total = produto.ValorTotalEmEstoque();
 
-            Console.WriteLine(produto);
+            //Console.WriteLine(produto);
+
+            Produto p = new Produto("TV", 500.00, 5);
+
+            string h = Console.ReadLine();
+
+            p.SetNome(h); 
+
+            Console.WriteLine(p.GetNome());
 
         }
     }
