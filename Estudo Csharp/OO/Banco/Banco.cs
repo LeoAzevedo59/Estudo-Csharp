@@ -4,37 +4,37 @@ namespace Estudo_Csharp.OO.Banco
 {
     class Banco
     {
-        private double valor = 0;
+        private double _valor = 0;
         public int Conta { get; set; }
         public string Nome { get; set; }
 
-        public double Validacao(char Caracter)
+        public double Validacao(char caracter)
         {
 
-            if (Caracter != 's')
-                valor = 0.00;
+            if (caracter != 's')
+                _valor = 0.00;
             else
-                valor = dinheiro();
+                _valor = dinheiro();
 
-            return valor;
+            return _valor;
         }
 
-        public double dinheiro()
+        private double dinheiro()
         {
             Console.Write("Entre o valor de depósito inciial: ");
             return double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
         }
-     
+
         public double Deposito(double depoisto)
         {
-            valor += depoisto;
-            return valor;
+            _valor += depoisto;
+            return _valor;
         }
 
         public double Retirada(double deposito)
         {
-            valor -= deposito;
-            return valor;
+            _valor -= deposito;
+            return _valor;
         }
 
         public override string ToString()
@@ -44,7 +44,7 @@ namespace Estudo_Csharp.OO.Banco
                 ", Titular: " +
                 Nome +
                 ", Saldo: $ " +
-                valor.ToString("F2", CultureInfo.InvariantCulture);
+                _valor.ToString("F2", CultureInfo.InvariantCulture);
         }
     }
 }
