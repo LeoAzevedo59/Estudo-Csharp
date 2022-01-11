@@ -7,7 +7,7 @@ namespace Estudo_Csharp.OO.Banco
 {
     class ApBanco
     {
-        static void Main(String[] args)
+        static void X(String[] args)
         {
             Banco banco = new Banco();
 
@@ -20,7 +20,6 @@ namespace Estudo_Csharp.OO.Banco
             Console.Write("Haverá depósito inicial (s/n)? ");
             banco.Validacao(char.Parse(Console.ReadLine().ToLower()));
 
-
             Console.WriteLine("\n" + "Dados da conta:" + "\n" + banco + "\n");
 
             Console.Write("Entre um valor para depósito: ");
@@ -31,10 +30,6 @@ namespace Estudo_Csharp.OO.Banco
             Console.Write("Entre um valor para saque: ");
             banco.Retirada(double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture));
             Console.WriteLine("\n" + "Dados da conta atualizados:" + "\n" + banco + "\n");
-
-            
-
-
         }
     }
 }
