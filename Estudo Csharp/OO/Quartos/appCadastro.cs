@@ -6,7 +6,7 @@ namespace Estudo_Csharp.OO.Quartos
 {
     class appCadastro
     {
-        static void Main(String[] args)
+        static void X(String[] args)
         {
             Cadastro[] vect = new Cadastro[10];
             Cadastro x = new Cadastro();

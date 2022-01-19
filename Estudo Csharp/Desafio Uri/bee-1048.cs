@@ -9,7 +9,7 @@ namespace Estudo_Csharp
     {
         public static void x(String[] args)
         {
-            static void Main(string[] args)
+            static void x(string[] args)
             {
                 double salarioAntigo, novoSalario, reajusteGanho, porcentual;
 
